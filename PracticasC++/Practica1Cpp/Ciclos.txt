@@ -1,0 +1,36 @@
+void letrasMinusculasConWhile() {
+	char c = 'a'; //Inicializacion
+	while (x <= 'z') { //Condicion para seguir
+		cout << c << endl;
+		c = c + 1;  //Paso al que sigue 
+	}
+}
+
+// a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+void letrasMinusculasConFor() {
+	for(char c = 'a'; c <= 'z'; c = c + 1) {
+		cout << c << endl;
+	}
+}
+
+// a b c d e f g h i j k l m n o p q r s t u v w x y z
+---------------------------------------------------------------------------------------
+//Iteratividad y recursividad.
+
+int factorialIterativo (int x) {
+	int r = 1;
+	while (x > 0) {
+		r = r *x;
+		x--;
+	}
+	return r;
+}
+
+int factorialRecursivo (int x) {
+	if (x == 0) {
+		return 1;
+	}
+
+	return x * factorialRecursivo (x -1);
+}

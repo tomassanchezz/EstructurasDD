@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1605648126 source:c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\personas\persona.cpp
+	<iostream>
+	"persona.h"
+
+1605648241 c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\personas\persona.h
+	<iostream>
+

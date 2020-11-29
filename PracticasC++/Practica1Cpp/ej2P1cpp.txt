@@ -1,0 +1,46 @@
+1. // Precondición: c1 < c2
+	void printFromTo(char c1, char c2) {
+
+		for(int i = 0; c1 + i <= c2; i++) {
+			cout << c1 + i << ", ";
+		}
+
+		cout << endl;
+	}
+
+Proposito: Imprime todos los caracteres desde el caracter c1 hasta el caracter c2
+	   agregando una coma y un espacio despues de cada caracter.
+
+Ej: printFromTo ('a', 'z')  //Imprime todo el abecedario
+     printFromTo ('a', 'e')  //a, b, c, d, e
+
+2. \\ Precondición: n >= 0
+	int fc(int n) {
+		int x = 1;
+
+		while(n > 0) {
+			x = x * n;
+			n--;
+		}
+
+		return x;
+	}
+
+Proposito: Retorna el factorial del numero dado por parametro.
+
+Ej: fc (2)   = 2
+     fc (11) = 39.916.800 
+
+
+3. \\ Precondición: n <= m
+	int ft(int n, int m) {
+		if (n == m) {
+			return n;
+		}
+		return n + ft(n+1, m);
+	}
+
+Proposito: Retorna la sumatoria de los numeros de n a m.
+
+Ej: ft (1, 4) = 10
+     ft (3, 5) = 12

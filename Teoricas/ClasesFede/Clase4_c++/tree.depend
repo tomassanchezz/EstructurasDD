@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1594772598 source:c:\users\sawad\desktop\ed-virtual\c++\tree\main.cpp
+	<iostream>
+	"queue.h"
+	"stack.h"
+	"tree.h"
+
+1594766747 c:\users\sawad\desktop\ed-virtual\c++\tree\tree.h
+
+1594764664 source:c:\users\sawad\desktop\ed-virtual\c++\tree\tree.cpp
+	<iostream>
+	"tree.h"
+
+1594764779 source:c:\users\sawad\desktop\ed-virtual\c++\tree\queue.cpp
+	"queue.h"
+
+1594764802 c:\users\sawad\desktop\ed-virtual\c++\tree\queue.h
+	<iostream>
+	"tree.h"
+
+1594766644 source:c:\users\sawad\desktop\ed-virtual\c++\tree\stack.cpp
+	"stack.h"
+
+1594766615 c:\users\sawad\desktop\ed-virtual\c++\tree\stack.h
+	<iostream>
+	"tree.h"
+
+1594764779 source:c:\users\sawad\desktop\estrd\ed-virtual-old\c++\tree\queue.cpp
+	"queue.h"
+
+1594764802 c:\users\sawad\desktop\estrd\ed-virtual-old\c++\tree\queue.h
+	<iostream>
+	"tree.h"
+
+1606336648 c:\users\sawad\desktop\estrd\ed-virtual-old\c++\tree\tree.h
+
+1594766644 source:c:\users\sawad\desktop\estrd\ed-virtual-old\c++\tree\stack.cpp
+	"stack.h"
+
+1594766615 c:\users\sawad\desktop\estrd\ed-virtual-old\c++\tree\stack.h
+	<iostream>
+	"tree.h"
+
+1606336548 source:c:\users\sawad\desktop\estrd\ed-virtual-old\c++\tree\main.cpp
+	<iostream>
+	"queue.h"
+	"stack.h"
+	"tree.h"
+
+1606336604 source:c:\users\sawad\desktop\estrd\ed-virtual-old\c++\tree\tree.cpp
+	<iostream>
+	"tree.h"
+

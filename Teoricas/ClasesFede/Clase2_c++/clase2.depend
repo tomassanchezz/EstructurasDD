@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1605136750 source:c:\users\sawad\desktop\ed-virtual\c++\clase2\main.cpp
+	<iostream>
+	"persona.h"
+
+1605136892 c:\users\sawad\desktop\ed-virtual\c++\clase2\persona.h
+	<iostream>
+	"mascota.h"
+
+1605136821 source:c:\users\sawad\desktop\ed-virtual\c++\clase2\persona.cpp
+	"persona.h"
+
+1605135636 source:c:\users\sawad\desktop\ed-virtual\c++\clase2\mascota.cpp
+	"mascota.h"
+
+1605135621 c:\users\sawad\desktop\ed-virtual\c++\clase2\mascota.h
+	<iostream>
+

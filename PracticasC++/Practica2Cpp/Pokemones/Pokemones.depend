@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1605653481 source:c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\pokemones\main.cpp
+	<iostream>
+	"Entrenadores.h"
+
+1605651654 c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\pokemones\pokemones.h
+	<iostream>
+
+1605651653 source:c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\pokemones\pokemones.cpp
+	<iostream>
+	"Pokemones.h"
+
+1605652720 c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\pokemones\entrenadores.h
+	<iostream>
+	"Pokemones.h"
+
+1605653967 source:c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\pokemones\entrenadores.cpp
+	<iostream>
+	"Pokemones.h"
+	"Entrenadores.h"
+

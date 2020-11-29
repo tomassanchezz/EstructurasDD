@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1606255308 source:c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\practica3cpp\queue\main.cpp
+	<iostream>
+	"Queue.h"
+
+1606254288 c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\practica3cpp\queue\queue.h
+	<iostream>
+
+1606255475 source:c:\users\tomas sanchez\desktop\facu\estructurasdd\cursada2\practica3cpp\queue\queue.cpp
+	<iostream>
+	"Queue.h"
+
