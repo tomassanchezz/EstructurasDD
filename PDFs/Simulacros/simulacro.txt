@@ -1,0 +1,121 @@
+===================================
+Ejercicio 1
+
+No es posible liberar dos veces la misma posicion de memoria
+
+===================================
+Ejercicio 2
+
+Linea 1: un int en stack
+Linea 2: un puntero a char en stack y un char en heap
+Linea 3: un puntero a bool en stack y 60 bool en heap
+
+===================================
+Ejercicio 3
+
+// Para no modificar la estructura
+// se utiliza la interfaz de iteración
+
+int minimoS(Stack s) {
+	inicializarRecorridoS(s);
+	int m = topS(s);
+	while(not terminoRecorridoS(s)) {
+	   m = min(m, elementoActualS(s));
+	   pasarAlSiguienteS(s);
+	}
+	return m;
+}
+
+int igualesAlMinimo(Stack s) {
+	int m = minimoS(s);
+	int res = 0;
+	inicializarRecorridoS(s);
+	while(not terminoRecorridoS(s)) {
+		if(elementoActualS(s) == m) {
+			res++;
+		}
+	}
+	return res;
+}
+
+===================================
+Ejercicio 4
+
+// Propósito: indica si algun elemento de la rama izquierda
+// es igual a 37
+// Costo: O(n), dado que el arbol no está balanceado
+void f(Tree t) {
+	if(isEmptyT(t)) {
+		return false;
+	} else {
+		return rootT(t) == 37 || f(leftT(t));
+	}
+}
+
+===================================
+Ejercicio 5
+
+Una ventaja de C++ sobre Haskell es la posibilidad de manipular manualmente la memoria a la hora de implementar estructuras de datos.
+
+===================================
+Ejercicio 6
+
+Propósito: Dado un array de bool y su tamaño, devuelve otro array sin los primeros 42 elementos del array dado.
+Precondición: El array posee al menos 42 elementos.
+
+bool* sinLosPrimeros42Elementos(bool* array, int tamanioDelArray) {
+	bool* nuevo = new bool[tamanioDelArray - 42];
+	for(int i = 0; i < tamanioDelArray; i++) {
+		if(i > 42) {
+			nuevo[i-42] = nuevo[i];
+		}
+	}
+	return nuevo;
+}
+
+===================================
+Ejercicio 7
+
+struct NodoA {
+	string nombre;
+	NodoA* siguiente;
+};
+
+struct GrupoSt {
+	NodoA* primero;
+};
+
+typedef GrupoSt* GrupoDeAlumnos;
+
+
+// Propósito: Devuelve un nuevo grupo vacío
+GrupoDeAlumnos nuevoGrupo() {
+	GrupoSt* nG = new GrupoSt;
+	nG->primero = NULL;
+	return nG;
+}
+
+// Propósito: Agrega un elemento nuevo, al principio de la cadena
+void agregarAlGrupoDeAlumnos(string nombre, GrupoDeAlumnos grupo) {
+	NodoA* nodo = new NodoA;
+	nodo->nombre = nombre;
+	nodo->siguiente = grupo->primero;
+	grupo->primero = nodo;
+}
+
+// Propósito: Libera la memoria ocupada por la estructura
+void destroyGrupoDeAlumnos(GrupoDeAlumnos grupo) {
+	NodoA* actual = grupo->primero;
+	while(actual != NULL) {
+		NodoA* tmp = actual;
+		actual = actual->siguiente;
+		delete tmp;
+	}
+	delete grupo;
+}
+
+===================================
+Ejercicio 8
+
+Stack s = emptyS();
+s = emptyS(); // pierdo la referencia a la primera stack, y eso produce un memory leak, ya que no hay manera de liberar esa stack guardada en memoria

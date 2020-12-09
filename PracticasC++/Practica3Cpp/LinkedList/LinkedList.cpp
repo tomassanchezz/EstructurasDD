@@ -12,6 +12,7 @@ struct LinkedListSt {
     int cantidad; // cantidad de elementos
     NodoL* primero; // puntero al primer nodo
     NodoL* actual; // puntero al nodo actual (para recorridos)
+    NodoL* ultimo; // puntero al ultimo nodo (para que snoc sea O(1))
 };
 
 typedef LinkedListSt* LinkedList;
@@ -23,6 +24,7 @@ LinkedList nil() {
     xs -> cantidad = 0;
     xs -> primero = NULL;
     xs -> actual = NULL;
+    xs -> ultimo = NULL;
 
     return xs;
 }
@@ -71,6 +73,15 @@ void snoc(int x, LinkedList xs) {
         }
         cons(x, xs);
     }
+
+//    NodoL* exUltimo = xs -> ultimo;
+//    NodoL* nuevoUltimo = new NodoL;
+//
+//    nuevoUltimo -> elem = x;
+//    nuevoUltimo -> siguiente = NULL;
+//
+//    exUltimo -> siguiente = nuevoUltimo;
+//    xs -> ultimo = nuevoUltimo;
 }
 
 //Apunta el recorrido al primer elemento

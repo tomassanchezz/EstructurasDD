@@ -23,7 +23,7 @@ Tree rightT(Tree t) {
     return t->right;
 }
 
-// Por comodidad para la creación de árboles
+// Por comodidad para la creaciï¿½n de ï¿½rboles
 Tree leafT(Elem x) {
     return nodeT(x, emptyT(), emptyT());
 }
@@ -39,5 +39,7 @@ Tree nodeT(Elem x, Tree left, Tree right) {
 // Prec.: la memoria de todos los nodos del arbol
 // no fue previamente liberada
 void destroyT(Tree t) {
-    // TAREA: COMPLETAR
+    while (!isEmptyT(t)) {
+        
+    }
 }

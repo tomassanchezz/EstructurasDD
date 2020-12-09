@@ -76,24 +76,37 @@ int minimo(LinkedList xs) {
     return minimo;
 }
 
-//LinkedList copy(LinkedList xs)
-//
+LinkedList copy(LinkedList xs) {
+
+}
+
 //void append(LinkedList xs, LinkedList ys)
 
 int main() {
     LinkedList xs = repetir (10, 75);
-//    printLinkedList(xs);
-//    cout << pertenece(75, xs) << endl;
-//    cout << (NULL == 8) << endl;
-//    cout << "" << endl;
-//    cout << sumatoria(xs) << endl;
-//    sucesores(xs);
+    printLinkedList(xs);                        //[75,75,75,75,75,75,75,75,75,75]
+    cout << "" << endl;
+    cout << pertenece(75, xs) << endl;          //1
+    cout << "" << endl;
+    cout << sumatoria(xs) << endl;              //750
+    sucesores(xs);                              //[76,76,76,76,76,76,76,76,76,76]
     printLinkedList(xs);
     cout << "" << endl;
-    cout << apariciones(75, xs) << endl;
-    snoc (74, xs);
-    cout << minimo(xs) << endl;
+    cout << apariciones(75, xs) << endl;        //0
+    snoc (74, xs);                              //[76,76,76,76,76,76,76,76,76,76,74]
+    printLinkedList(xs);
+    cout << minimo(xs) << endl;                 //74
+    tail(xs);
+    tail(xs);
+    tail(xs);
+    tail(xs);
+    tail(xs);
+    tail(xs);
+    printLinkedList(xs);
+    cout << '4' << endl;
     destroyL(xs);
+    cout << '5' << endl;
+    printLinkedList(xs);
     return 0;
 }
 
