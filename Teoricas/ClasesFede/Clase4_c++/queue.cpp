@@ -14,7 +14,7 @@ struct QueueRep {
 
 /**
 Inv. Rep:
-  + si first es NULL, last también
+  + si first es NULL, last tambiï¿½n
   + len es la cantidad de nodos desde first hasta last
 **/
 

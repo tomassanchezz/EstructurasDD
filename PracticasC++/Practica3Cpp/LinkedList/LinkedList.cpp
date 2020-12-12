@@ -17,7 +17,7 @@ struct LinkedListSt {
 
 typedef LinkedListSt* LinkedList;
 
-//Crea una lista vacía.
+//Crea una lista vacï¿½a.
 LinkedList nil() {
     LinkedList xs = new LinkedListSt;
 
@@ -29,7 +29,7 @@ LinkedList nil() {
     return xs;
 }
 
-//Indica si la lista está vacía.
+//Indica si la lista estï¿½ vacï¿½a.
 bool isEmpty(LinkedList xs) {
     return xs->cantidad == 0;
 }
