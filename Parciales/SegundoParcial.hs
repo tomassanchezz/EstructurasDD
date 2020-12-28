@@ -56,9 +56,13 @@ casoCerrado (ConsI pers evs sosp cevs) =
 -- Eficiencia: O(log N)
 esSospechoso :: Nombre -> Investigacion -> Bool
 esSospechoso n (ConsI pers evs sosp cevs) =
-    if lookupM n pers == Nothing
+    if esNothing (lookupM n pers)
         then False
         else cantEvidencia (fromJust (lookupM n pers)) > 0
+
+esNothing :: Maybe -> Bool
+esNothing Nothing = True
+esNothing _       = False 
 
 -- Eficiencia: O(1)
 fromJust (Just x) = x
@@ -86,7 +90,7 @@ posiblesInocentes' (n:ns) (ConsI pers evs sosp cevs) =
 -- Eficiencia: O(N log N)
 ingresarPersonas :: [Nombre] -> Investigacion -> Investigacion
 ingresarPersonas ns (ConsI pers evs sosp cevs) =
-    ConsI (agregarPersM ns pers) evs (agregarPersPQ ns sosp) cevs 
+    ConsI (ingresarPersonasM ns pers) evs (ingresarPersonasPQ ns sosp) cevs 
 
 -- Eficiencia: O(N log N)
 ingresarPersonasM :: [Nombre] -> Map Nombre Persona -> Map Nombre Persona
